@@ -10,8 +10,7 @@
     </div>
     <div class="main">
       <div class="leftnav">
-        <router-link v-for="(item,index) in todotype" :key="index" class="zy {{}}" to="/test/+id"
-        >{{item}}</router-link>
+        <router-link v-for="(item,index) in todotype" :key="index" class="zy {{}}" :to="{path:'/test',query:{type:item}}">{{item}}</router-link>
         <!-- <router-link  class="zy" to="/test">重要-很紧急</router-link> -->
       </div>
 

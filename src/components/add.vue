@@ -31,9 +31,10 @@
 </template>
 
 <script type="text/javascript">
-export default{
-	name:'add'
-}
+export default {
+    name:'add'    
+  }
+
 </script>
 
 <style type="text/css" scoped>

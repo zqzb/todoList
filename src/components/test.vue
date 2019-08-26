@@ -16,7 +16,16 @@ export default{
 			list:[]
 		}
 	},
+	methods:{
+		getParams(){
+			console.log(this.$route.query.type)
+		}
+	},
+	watch:{
+		'$route':'getParams'
+	},
 	mounted(){
+		
 		axios.get("http://127.0.0.1:3000/cars").then((res)=>{
 			console.log(this)
 			this.list=res.data

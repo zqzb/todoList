@@ -6,7 +6,18 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  metaInfo: {
+	  title: 'My Example App', // set a title
+	  meta: [{                 // set meta
+	    name: 'keyWords',
+	    content: 'My Example App'
+	  }],
+	  link: [{                 // set link
+	    rel: 'asstes',
+	    href: 'https://assets-cdn.github.com/'
+	  }]
+	}
 }
 </script>
 

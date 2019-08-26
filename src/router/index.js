@@ -20,7 +20,7 @@ export default new Router({
           component:add
         },
         {
-          path:'/test/:id',
+          path:'/test',
           component:test
         }
       ]
